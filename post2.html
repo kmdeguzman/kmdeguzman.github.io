@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic HTML</title>
+
+    <!-- Styles -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1><a href="index.html" id="h1-link-to-homepage">Kayla's Blog</a></h1>
+        <div class="h2-header-container">
+            <h2>Blog Post 2:<br>Semantic HTML</h2>
+        </div>
+    </header>
+
+    <main>
+        <div class="bp-store-flex-items">
+            <div class="flex-item-article">
+                <section class="bp-section">
+                    <h3 class="blogpost-h3">Thoughts on Semantic HTML</h3>
+                    <!-- your thoughts on it and how it relates to the article that you wrote and have recently styled. -->
+                    <p>Semantics in HTML helps the browser to understand what to do with your website's information.  Semantic tags tell the browser how content should be structured.  They define what the content does.  Non-semantic tags tell the browser how to display the structured content of elements.  Delegating these tags to your website's content properly makes it easy for search engines to index the website's information.  This article helped me learn how each semantic tag should be used for machine understanding.</p>
+        
+                    <img src="images/semantic-html.jpg" alt="example-1" class="hp-img">
+        
+                    <h3>Elements I Used</h3>
+                    <!-- Why did you choose the elements you used and how do they help describe the structure of the content? -->
+                    <p>I used a header tag for the introductory part of the article, main for the article's primary and most relevant content, and footer for the end of the page.  I chose these elements to describe and differentiate the content properly.  I also included a section tag with article tag inside the main in order to differentiate an article within the main content.</p>
+        
+                    <img src="images/semantic-ex.jpg" alt="example-2" class="hp-img">
+        
+                    <h3>Article Styling</h3>
+                    <!-- Also discuss the styling of your blog post: what are you experimenting with and what kind of look are you trying to achieve? What is most challenging in terms of the visual design? -->
+                    <p>As far as styling, I've been experimenting with the CSS grid tags to try and create a more interesting layout for my blog pages.  I am trying to achieve a more dynamic look that is visually engaging.  The most challenging part is to get the code, grid, and layout to do exactly what you want it to.  Sometimes margins and alignment is off, or the grid doesn't do what you wanted it to, and troubleshooting that is difficult.</p>
+                </section>
+            </div>
+            <div class="flex-item-nav">
+                <nav class="bp-nav-desktop">
+                    <div class="nav-box">
+                        <div class="blogpost-nav">
+                            <ul>
+                                <li><a href="post1.html" class="nav">Previous Post</a></li>
+                                <li class="nav">|</li>
+                                <li><a href="index.html" class="nav">Home Page</a></li>
+                                <li class="nav">|</li>
+                                <li><a href="post3.html" class="nav">Next Post</a></li>
+                            </ul>
+                        </div>
+                        <div class="white-box">
+                            <h3>Semantic HTML</h3>
+                            <p>Related Links</p>
+                            <div class="nav-links">
+                                <a href="https://www.semrush.com/blog/semantic-html5-guide/#header5" target="_blank" class="box-nav-a">HTML Semantic Tags Article</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </main>
+
+    <nav class="blogpost-nav">
+        <ul>
+            <li><a href="post1.html" class="nav">Previous Post</a></li>
+            <li class="nav">|</li>
+            <li><a href="index.html" class="nav">Home Page</a></li>
+            <li class="nav">|</li>
+            <li><a href="post3.html" class="nav">Next Post</a></li>
+        </ul>
+    </nav>
+
+    <footer>
+        <p>Learn More</p>
+    </footer>
+    <div class="space-for-nav"></div>
+</body>
+
+</html>

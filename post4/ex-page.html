@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles-ex-page.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <title>example</title>
+
+    <style>
+        #container {
+        background-color: white;
+        display: grid;
+        grid-template-rows: auto auto 5em;
+        grid-template-columns: minmax(25em, 1fr) 16em; 
+        grid-template-areas:
+            "banner banner"
+            "main hours"
+            "footer footer"; 
+        }
+
+        header {
+            grid-area: banner;
+        }
+        main {
+            grid-area: main;
+        }
+        aside {
+            grid-area: hours;
+        }
+        footer {
+            grid-area: footer;
+        } 
+
+        div {
+            padding: 50px;
+            border: 20px solid white;
+            background-color:coral;
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <div id="container">
+    <header>
+        <div>header</div>
+    </header>
+    <main>
+        <div>main</div>
+    </main>
+    <aside>
+        <div>aside</div>
+    </aside>
+    <footer>
+        <div>footer</div>
+    </footer>
+    </div>
+</body>
+
+</html>
